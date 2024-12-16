@@ -23,7 +23,7 @@ class WordsFinder:
         for file_name, words in all_words.items():
             for index, w in enumerate(words):
                 if w == word:
-                    result[file_name] = index
+                    result[file_name] = index + 1
                     break
         return result
 
